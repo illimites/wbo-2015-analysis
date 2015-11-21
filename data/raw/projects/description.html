@@ -1,0 +1,557 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pl" lang="pl-pl" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pl" lang="pl-pl" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pl" lang="pl-pl" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pl" lang="pl-pl" dir="ltr"> <!--<![endif]-->
+
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="zbiory otwartych danych Wrocław, otwarte dane, dane publiczne, wyszukiwarka danych, open data Wrocław" />
+  <meta name="author" content="sdf1" />
+  <meta name="xreference" content="sdf3" />
+  <meta name="description" content="Zbiór otwartych danych - Wrocławski Budżet Obywatelski.Ten zbiór danych jest informacją publiczną i może być  wykorzystywany bez ograniczeń.
+" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Wrocławski Budżet Obywatelski - Otwarty Wrocław</title>
+  <link href="/open-data/templates/jp-x2/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="/open-data/cache/widgetkit/widgetkit-6efb6b0d.css" type="text/css" />
+  <link rel="stylesheet" href="/open-data/media/modals/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="http://www.wroclaw.pl/open-data//media/plg_system_info_ciacho/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="/open-data/templates/jp-x2/css/bootstrap.css" type="text/css" />
+  <style type="text/css">
+
+#goog-gt-tt {display:none !important;}
+.goog-te-banner-frame {display:none !important;}
+.goog-te-menu-value:hover {text-decoration:none !important;}
+body {top:0 !important;}
+#google_translate_element2 {display:none!important;}
+
+        a.flag {font-size:16px;padding:1px 0;background-repeat:no-repeat;background-image:url('/open-data/modules/mod_gtranslate/tmpl/lang/16a.png');}
+        a.flag:hover {background-image:url('/open-data/modules/mod_gtranslate/tmpl/lang/16.png');}
+        a.flag img {border:0;}
+        a.alt_flag {font-size:16px;padding:1px 0;background-repeat:no-repeat;background-image:url('/open-data/modules/mod_gtranslate/tmpl/lang/alt_flagsa.png');}
+        a.alt_flag:hover {background-image:url('/open-data/modules/mod_gtranslate/tmpl/lang/alt_flags.png');}
+        a.alt_flag img {border:0;}
+    
+  </style>
+  <script src="/open-data/media/jui/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/open-data/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+  <script src="/open-data/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+  <script src="/open-data/cache/widgetkit/widgetkit-18c5e543.js" type="text/javascript"></script>
+  <script src="/open-data/media/modals/js/jquery.colorbox-min.js" type="text/javascript"></script>
+  <script src="/open-data/media/modals/js/script.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+var modal_class = 'modal_link'; var modal_defaults = { opacity: '0.8',maxWidth: '95%',maxHeight: '95%',current: '{current} / {total}',previous: 'previous',next: 'next',close: 'close',xhrError: 'This content failed to load.',imgError: 'This image failed to load.' };
+function info_cookie(){
+                 document.cookie = 'info_cookie=1';
+                 document.getElementById('panel_cookie_dol').style.display='none';             
+              }
+              window.addEvent('load', function() {
+                var cookies = document.cookie.split(';');
+                if(!cookies.length)
+                  document.getElementById('panel_cookie_dol').style.display='none'; 
+               });
+         
+  </script>
+
+<link rel="apple-touch-icon-precomposed" href="/open-data/templates/jp-x2/apple_touch_icon.png" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/open/social-likes_birman.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/open/style.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/open/style.menu.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/open/style2.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/open/fontello.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/open/fontello-ie7.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/open/bootstrap.min.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/global.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/animate.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/base.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/layout.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/menus.css" />
+<style>.wrapper { max-width: 1170px; }
+.jp-main-outer { max-width: 1170px; }
+body { font-size: 16px; }
+.menu-dropdown a.level1,.menu-dropdown span.level1 { font-size: 17px; }
+#header{ height: 100px;}
+#menu { margin-top: 30px; }
+#maininner { width: 100%; }
+#menu .dropdown { width: 250px; }
+#menu .columns2 { width: 500px; }
+#menu .columns3 { width: 750px; }
+#menu .columns4 { width: 1000px; }</style>
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/modules.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/tools.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/system.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/extensions.css" />
+<link rel="stylesheet" href="css:style.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/widgetkit.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/fonts/font-awesome.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/joomlaplates.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/color/red.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/font1/opensans.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/font2/opensans.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/font3/opensans.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/menustyle/menu-bright.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/bg-overlay/overlay-on.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/responsive.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/print.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/custom.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/open/slick.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/css/open/slicknav.min.css" />
+<link rel="stylesheet" href="/open-data/templates/jp-x2/fonts/opensans.css" />
+<script src="/open-data/templates/jp-x2/warp/js/warp.js"></script>
+<script src="/open-data/templates/jp-x2/warp/js/responsive.js"></script>
+<script src="/open-data/templates/jp-x2/warp/js/accordionmenu.js"></script>
+<script src="/open-data/templates/jp-x2/warp/js/dropdownmenu.js"></script>
+<script src="/open-data/templates/jp-x2/js/wow.js"></script>
+<script src="/open-data/templates/jp-x2/js/chartnew.js"></script>
+<script src="/open-data/templates/jp-x2/js/vendor/social-likes.min.js"></script>
+<script src="/open-data/templates/jp-x2/js/template.js"></script>
+<style type="text/css">
+body{background:#fff url(http://www.wroclaw.pl/open-data/) no-repeat center center fixed;}
+body{background-color:#fff}
+</style>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600%7CLato:400,700,900&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>-->
+<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<link rel="apple-touch-icon" sizes="57x57" href="/open-data/img/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/open-data/img/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/open-data/img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/open-data/img/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/open-data/img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/open-data/img/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/open-data/img/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/open-data/img/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/open-data/img/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/open-data/img/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/open-data/img/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/open-data/img/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/open-data/img/favicon-16x16.png" sizes="16x16">
+	
+	<link rel="manifest" href="/open-data/img/manifest.json">
+	<link rel="shortcut icon" href="/open-data/img/favicon.ico">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="msapplication-TileImage" content="img/mstile-144x144.png">
+	<meta name="msapplication-config" content="img/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<meta property="og:type" content="article">
+	<!--<meta property="og:url" content="{page_url}">-->
+	<meta property="og:title" content="Otwarte dane we Wrocławiu">
+	<meta property="og:description" content="Dane o szczególnym znaczeniu dla rozwoju innowacyjności w państwie i rozwoju społeczeństwa informacyjnego wyszukaj w jednym miejscu.">
+	<meta property="og:image" content="http://www.wroclaw.pl/open-data/img/slider_facebook_1260.png">
+	
+	<script type="text/javascript">
+		//><!--
+		var pp_gemius_identifier ='0nKbkC8GQD.22cHmDg5_r3XWXfaZcyOYqdL2QsK0kaL.07';
+		//--><!
+	</script><script src="http://advice.hit.gemius.pl/xgemius.js" type="text/javascript"></script>
+	<script>
+ 		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-43650571-1']);
+		_gaq.push(['_setDomainName', 'www.wroclaw.pl']);
+		_gaq.push(['_setAllowLinker', true]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+</script>
+	
+</head>
+
+<body id="page" class="page  isblog " data-config='{"twitter":0,"plusone":0,"facebook":0}'>
+
+    <ul class="nav">
+        <li><a href="#mainMenu">Przejdź do menu głównego</a></li>
+        <li><a href="#labelSearch">Przejdź do wyszukiwarki</a></li>
+        <li><a href="#mainContent">Przejdź do głównej treści</a></li>
+        <li><a href="#">Mapa serwisu</a></li>
+    </ul>
+	
+	<!-- POCZATEK --- MENU MOBILNE -->
+	<ul id="mobileMenu">
+		<li><a href="/open-data/index.php/zbiory-danych/16-zbiory">Zbiory danych</a></li>
+		<li><a href="/open-data/index.php/warunki-korzystania">Warunki korzystania</a></li>
+		<li><a href="/open-data/index.php/o-projekcie-2">O projekcie</a></li>
+		<li><a href="/open-data/index.php/przyklady">Przykłady</a></li>
+		<li><a href="/open-data/index.php/aktualnosci">Aktualności</a></li>
+		<li><a href="/open-data/index.php/kontakt">Kontakt</a></li>
+		<li><a href="http://www.wroclaw.pl"><img src="/open-data/img/logo-wroclaw-pl-white.png" data-2x="img/logo-wroclaw-pl-white@2x.png" data-3x="img/logo-wroclaw-pl-white@3x.png" width="120" height="27" alt="www.wroclaw.pl" /> <span class="txtHomeWroclaw">Strona główna</span></a></li>
+	</ul>
+	<!-- KONIEC --- MENU MOBILNE -->
+                                                                                                                                                      
+<div class="header-outer">
+
+    <div class="jp-toolbar-outer clearfix">
+	<div class="wrapper clearfix navwroclaw">
+     	<!-- POCZATEK --- STALE MENU WWW.WROCLAW.PL -->
+	<header id="ck_top_menu_1" class="clearfix">
+		<div class="ck_container_1180px zindefidex clearfix">
+			<nav class="hidden-sm hidden-xs">
+				<ul>
+					<li><a href="http://www.wroclaw.pl" class="logoSmall"> <img src="/open-data/img/logoSmall.png" alt="www.wroclaw.pl"></a></li>
+					<li><a href="http://www.wroclaw.pl/wiadomosci" title="Wiadomości">Wiadomości</a></li>
+					<li><a href="http://www.wroclaw.pl/kultura" title="Kultura">Kultura</a></li>
+					<li><a href="http://www.wroclaw.pl/komunikacja">Komunikacja</a></li>
+					<li><a href="http://www.wroclaw.pl/sport-i-rekreacja">Sport</a></li>
+					<li><a href="http://www.wroclaw.pl/turystyka">Turystyka</a></li>
+					<li><a href="http://www.wroclaw.pl/rozrywka">Rozrywka</a></li>
+					<li><a href="http://www.wroclaw.pl/nieruchomosci-wroclaw">Dom</a></li>
+					<li><a href="http://www.wroclaw.pl/biznes-i-nieruchomosci">Biznes</a></li>
+					<li><a href="http://www.wroclaw.pl/urzad">Urząd</a></li>
+					<li class="separator">|</li>
+					<li class="ck_unroll_icon"><a href="#" class="ck_more">Więcej </a>
+						<ul class="ck_unroll_menu">
+							<li><a href="http://www.wroclaw.pl/europejska_stolica_kultury">Europejska Stolica Kultury 2016</a></li>
+							<li><a href="http://www.wroclaw.pl/the-world-games-2017">The World Games 2017</a></li>
+							<li><a href="http://www.wroclaw.pl/wroclawski-budzet-obywatelski">Wrocławski Budżet Obywatelski</a></li>
+							<li><a href="http://www.wroclaw.pl/kooperatywy">Wrocławskie Kooperatywy Mieszkaniowe</a></li>
+							<li><a href="http://www.wroclaw.pl/nieruchomosci-wroclaw/nowe-mieszkania-wroclaw/mapa">Mapa inwestycji mieszkaniowych</a></li>
+							<li><a href="http://www.wroclaw.pl/rozmawia">Wrocław Rozmawia</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+            <div class="boxWCAG">
+                <ul class="withRightBorder toolFontSize listWithLinks"><li><a href="#" class="lnkFontSmall"><span aria-hidden="true">-</span><span class="sr-only">pomniejsz czcionkę</span></a></li> <li><a href="#" class="lnkFontStandard"><span aria-hidden="true">A</span><span class="sr-only">przywróć standardowy rozmiar czcionki</span></a></li> <li><a href="#" class="lnkFontLarge"><span aria-hidden="true">+</span><span class="sr-only">powiększ czcionkę</span></a></li></ul>
+                <ul class="toolColorVersion listWithLinks"><li><a href="#" class="lnkColorStandard"><span aria-hidden="true">A</span><span class="sr-only">wersja standardowa</span></a></li><li><a href="#" class="lnkColorContrast"><span aria-hidden="true">A</span><span class="sr-only">wersja dla niedowidzących</span></a></li></ul>
+            </div>
+		</div>
+	</header>
+	<!-- KONIEC --- STALE MENU WWW.WROCLAW.PL -->             	
+					
+		<!--<div id="toolbar" class="clearfix">
+			-->
+						<div class="float-right"><div class="module   deepest">
+
+			<noscript>Javascript is required to use <a href="http://gtranslate.net/">GTranslate</a> <a href="http://gtranslate.net/">multilingual website</a> and <a href="http://gtranslate.net/">translation delivery network</a></noscript>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
+/* ]]> */
+</script>
+
+
+<div id="google_translate_element2"></div>
+<script type="text/javascript">function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'pl', autoDisplay: false}, 'google_translate_element2');}</script>
+<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+		
+</div></div>
+					<!--</div>-->
+
+	</div>
+</div>
+          
+                                    
+		<nav class="navbar navbar-default" role="navigation">
+	<div class="menu-outer">
+        <div class="wrapper clearfix margin-bottom">
+          <header id="header">
+                    <div id="headerbar" class="clearfix">
+                        	
+                        <a id="logo" href="http://www.wroclaw.pl/open-data">
+<p><img src="/open-data/img/logo-otwarte-dane.png" alt="" /></p></a>
+                                                                        <div id="menubar" class="clearfix">
+                            <nav id="menu"><ul class="menu menu-dropdown"><li class="level1 item165 active current"><a href="/open-data/index.php/zbiory-danych" class="level1 active current"><span>Zbiory danych</span></a></li><li class="level1 item164"><a href="/open-data/index.php/warunki-korzystania" class="level1"><span>Warunki korzystania</span></a></li><li class="level1 item169"><a href="/open-data/index.php/o-projekcie" class="level1"><span>O projekcie</span></a></li><li class="level1 item166"><a href="/open-data/index.php/przyklady" class="level1"><span>Przykłady</span></a></li><li class="level1 item162"><a href="/open-data/index.php/aktualnosci" class="level1"><span>Aktualności</span></a></li><li class="level1 item106"><a href="/open-data/index.php/kontakt" class="level1"><span>Kontakt</span></a></li></ul></nav>
+                                                 </div>
+                     </div>
+                </header>
+            </div>
+            </div>
+    </nav>                                     
+                                          <!--end menu-outer-->
+
+                                         <!-- <div id="stopper"> </div>-->
+                 
+                 
+                 
+	</div><!--end supersize-->
+
+
+
+
+
+<!--TOP A B C D Module-->
+
+
+<div class="top-b-outer">
+    <div class="wrapper clearfix">
+	<div class="row"><div class="col-xs-12 boxDataSearch">
+    <!--<section id="top-b" class="grid-block">-->
+	<div class="module mod-box zbior deepest">
+
+			
+<form id="searchbox-186" class="searchbox" action="/open-data/index.php/wyszukiwanie" method="get" role="search">
+	<input type="text" value="" name="q" placeholder="szukaj..." autocomplete="off" />
+	<button type="reset" value="Reset"></button>
+	</form>
+
+<script src="/open-data/templates/jp-x2/warp/js/search.js"></script>
+<script>
+jQuery(function($) {
+
+	$('#searchbox-186 input[name=q]').search({
+		'url': '/open-data/index.php/component/finder/?task=suggestions.display&amp;format=json&amp;tmpl=component', 
+		'param': 'q', 
+		'msgResultsHeader': false, 
+		'msgMoreResults': false, 
+		'msgNoResults': false,
+		'onSelect': function(selected){
+			this.input.val(selected.data('choice').title);
+			this.input.parent('form').submit();
+		},
+		'onLoadedResults': function(data){
+
+			var results = [];
+
+			$.each(data, function(i, val){
+				results.push({'title': val, 'text': '', 'url': ''});
+			});
+
+			return {'results': results, 'count': data.length, 'error': null};
+		}
+	}).placeholder();
+
+});
+</script>		
+</div>	<!--</section>-->
+	</div></div></div>
+</div>
+
+
+
+<!--Maincontent-->
+<div id="mainsite" class="clearfix">
+<div style="position:absolute;top:0;left:-9999px;">
+	<a href="http://www.joomlaplates.com" title="joomla templates">joomla templates</a>
+    <a href="http://www.joomlaplates.com" title="free joomla templates">top joomla templates</a>
+    <a href="http://www.joomlaplates.de" title="template joomla">template joomla</a>
+</div>
+	
+
+  	<div class="main-outer clearfix">
+		<div class="wrapper clearfix">
+			<div id="main" class="grid-block">
+				<!--<div id="maininner" class="grid-box module mod-box mod-shadow deepest">-->
+                                                                                          
+                                                                                         
+				<div class="grid-box module mod-box mod-shadow deepest">
+															<section id="breadcrumbs"><div class="row">
+<div class=" col-xs-12 boxBreadCrumb breadcrumbs"><a href="/open-data/index.php/"><i class="icon-house"></i></a>
+<a href="/open-data/index.php/zbiory-danych">Zbiory danych</a><a href="/open-data/index.php/zbiory-danych/15-urzad-miasta">Urząd Miejski</a><strong>Wrocławski Budżet Obywatelski</strong></div></div></section>
+						
+										<section id="content" class="grid-block"><div id="system-message-container">
+	</div>
+
+
+<div id="system">
+
+
+		
+	
+	<!-- -->
+
+	
+	<article class="item" data-permalink="http://opendata.cui.wroclaw.pl/open-data/index.php/zbiory-danych/15-urzad-miasta/98-wroclawski-budzet-obywatelski">
+
+		<div class="row">
+
+				<div class="col-xs-12">
+					<h1 class="txtSiteTitle txtSiteTitleBlack">Wrocławski Budżet Obywatelski</h1>
+					<hr class="borderTopContent">
+				</div>
+
+		</div>
+		<div class="row">
+			<div class="col-sm-12 boxDataDescTitle">
+				<p class="txtDesc">Lista projektów zgłoszonych przez mieszkańców w ramach WBO</p>
+			</div>
+		
+		
+			<div class="col-md-7 col-md-push-5 boxDataPhoto">
+																	
+				
+<h2 class="txtSubTitle">Dane i Zasoby</h2>
+<!-- Lista plikow maksymalnie po 3 w kazdej liscie li -->
+<ul class="row boxFiles listWithLinksBlock">
+<li class="col-sm-4"><a href="/open-data/opendata/wbo2014.csv" target="blank"> <span><span class="sr-only">Format pliku: </span>CSV</span> <br /> <span class="sr-only">Pobierz: </span>Zgłoszone projekty w 2014 r. </a></li>
+<li class="col-sm-4"><a href="/open-data/opendata/wbo2015.csv" target="blank"> <span><span class="sr-only">Format pliku: </span>CSV</span> <br /> <span class="sr-only">Pobierz: </span>Zgłoszone projekty w 2015 r. </a></li>
+</ul>				
+			</div>
+			<div class="col-md-5 col-md-pull-7 boxDataDesc">
+
+			<table class="listParams">
+						<tbody><tr>
+							<th>Źródło</th>
+							<td>
+								UM - Biuro ds. Partycypacji Społecznej							
+							</td>
+						</tr>
+						<tr>
+							<th>Kategoria</th>
+							<td>
+								<a href="/open-data/index.php/zbiory-danych/15-urzad-miasta">Urząd Miejski</a>							
+							
+							</td>
+						</tr>
+												
+						<tr>
+							<th>Częstotliwość aktualizacji</th>
+							<td>
+							raz w miesiącu							</td>
+						</tr>
+																			<tr>
+								<th>Ostatnia Modyfikacja</th>
+									<td>
+								 <time datetime="2015-10-23" pubdate>23 października 2015, 10:27</time>								</td>
+							</tr>
+							
+						<tr>
+							<th>Utworzono</th>
+							<td>
+							 <time datetime="2015-07-28" pubdate>28 lipca 2015</time>							
+							</td>
+						</tr>
+					</tbody>
+			</table>
+			</div>
+
+		
+			
+		</div>
+		<div class="col-xs-12 boxDataDesc boxDataDescNoPhoto">
+			<h2 class="txtSubTitle">Warunki wykorzystania</h2>
+					<p>Ten zbiór danych jest informacją publiczną, może być ponownie wykorzystywany bez ograniczeń. <a href="/open-data/index.php/warunki-korzystania">Szczegóły<i class="icon-angle-right"></i><span class="sr-only"> warunków wykorzystania</span></a>
+			</p>
+			<div class="social-likes">
+						<p class="txtSubTitle">Udostępnij / polub</p>
+						<div class="facebook" title="Udostępnij poprzez Facebook">Facebook</div>
+						<div class="twitter" title="Udostępnij poprzez Twitter">Twitter</div>
+						<div class="plusone" title="Udostępnij poprzez Google+">Google+</div>
+			</div>
+		</div>
+
+
+
+								
+		
+		
+		
+			
+	</article>
+
+	
+	
+	<!-- -->
+	
+	
+	</div></section>
+						
+									</div>
+				<!-- maininner end -->
+				
+								
+								
+			</div><!-- main end -->
+			
+		</div><!-- wrapper end -->
+	</div><!-- main-outer end -->
+    </div><!-- main-site end -->
+	    
+<!--BOTTOM A B C D Module-->
+  
+
+
+
+
+
+<footer>
+<div class="bottom-d-outer">
+    <div class="wrapper clearfix">
+    <section id="bottom-d" class="grid-block"><div class="grid-box width25 grid-h"><div class="module   deepest">
+
+			
+<div class="boxFooterLogo"><img alt="Otwarte Dane Wrocław - Smart City" data-3x="img/logo-white-otwarte-dane@3x.png" data-2x="img/logo-white-otwarte-dane@2x.png" src="/open-data/img/logo-white-otwarte-dane.png" class="boxFooterLogo" height="75" width="221" /></div>		
+</div></div><div class="grid-box width25 grid-h"><div class="module   deepest">
+
+			
+<ul class="listWithLinksBlock">
+<li><a href="/open-data/index.php/zbiory-danych">Zbiory danych</a></li>
+<li><a href="/open-data/index.php/warunki-korzystania">Warunki korzystania</a></li>
+<li><a href="/open-data/index.php/o-projekcie">O projekcie</a></li>
+<li><a href="/open-data/index.php/przyklady">Przykłady</a></li>
+</ul>		
+</div></div><div class="grid-box width25 grid-h"><div class="module   deepest">
+
+			
+<ul class="listWithLinksBlock">
+        <li><a href="/open-data/index.php/aktualnosci">Aktualności</a></li>
+	<li><a href="/open-data/index.php/kontakt">Kontakt</a></li>
+	<li><a href="#">SmartCity Wrocław</a></li>
+</ul>		
+</div></div><div class="grid-box width25 grid-h"><div class="module   deepest">
+
+			
+<ul class="row listWithLinksBlock">
+						<li class="col-sm-6 boxFooterLogo2">
+							<a href="http://www.wroclaw.pl"><img width="124" height="27" alt="Oficjalny portal internetowy Wrocławia - www.wroclaw.pl" data-3x="img/logo-wroclaw-pl.png" data-2x="img/logo-wroclaw-pl.png" src="/open-data/img/logo-wroclaw-pl.png" class=""></a>
+						</li>
+						<li class="col-sm-6 boxFooterLogo2">
+							<a href="http://cui.wroclaw.pl/"><img width="66" height="36" alt="Centrum Usług Informatycznych we Wrocławiu" data-3x="img/logo-cui-wroclaw.png" data-2x="img/logo-cui-wroclaw.png" src="/open-data/img/logo-cui-wroclaw.png" class=""></a>
+						</li>
+					</ul>		
+</div></div></section>
+	</div>
+</div>
+</footer>
+
+
+<div class="footer-outer">
+		<div class="wrapper clearfix">
+			<section id="footer-a" class="grid-block"><div class="grid-box width100 grid-h">
+			<hr style="border-top: 2px solid #373332;">
+				<p><small>Copyright (c) 2015 ARAW S.A., Gmina Wrocław</small></p>		
+</div></section>
+		</div>
+	</div>
+                                                                                           
+
+	
+
+	
+
+<!--Loading footer for Google Code-->
+
+<!--Loading TopTop Scroller-->
+<p id="back-top"><a href="#page"><span></span></a></p>
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/open-data/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+	<script src="/open-data/js/vendor/jquery.slicknav.min.js"></script>
+	<script src="/open-data/js/vendor/social-likes.min.js"></script>
+	<script src="/open-data/js/vendor/bootstrap-tagsinput.min.js"></script>
+	<script src="/open-data/js/vendor/jquery.cookie.js"></script>
+	<!-- DODANY SLICK SLIDER -->
+	<script src="/open-data/js/vendor/slick.min.js"></script>
+	<!-- DODANY FANCYBOX -->
+	<script src="/open-data/js/vendor/jquery.fancybox.pack.js"></script>
+    <script src="/open-data/js/scripts.menu.js"></script>
+	<!-- DODANY SKRYPT STRONY -->
+	<script src="/open-data/js/scripts.example.js"></script>
+	<script src="/open-data/js/scripts.js"></script>
+	<script src="/open-data/js/vendor/dense.js"></script>
+
+<div id="panel_cookie_dol" class="panel_cookie"><div class="tresc"><h4>Informacje o plikach cookie</h4><p>Ta strona używa plików Cookies. Dowiedz się więcej o celu ich używania i możliwości zmiany ustawień Cookies w przeglądarce. <a href="/open-data/index.php/zbiory-danych?id=69">Czytaj więcej...</a></p></div><input type="button" id="ukryj" value="Zamknij" onclick="info_cookie();"/></div></body>
+</html>
