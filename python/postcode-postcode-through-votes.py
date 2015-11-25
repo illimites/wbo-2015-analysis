@@ -36,7 +36,7 @@ codes_from_projects = { vote[-7].replace('-','') : {} for vote in wroclaw_record
 all_votes = len(wroclaw_records)
 
 
-print("Counting votes".format(thresh))
+print("Counting votes")
 
 i = 0
 
@@ -75,7 +75,7 @@ for vote in wroclaw_records:
 codes_weighted_by_vote_count = { vote[-7].replace('-','') : {} for vote in wroclaw_records }
 codes_weighted_by_project_count = { vote[-7].replace('-','') : {} for vote in wroclaw_records }
 
-print("Counting unique votes".format(thresh))
+print("Counting unique votes")
 
 for k1 in codes_from_votes.keys():
     for k2 in codes_from_votes[k1].keys():
@@ -89,7 +89,7 @@ for k1 in codes_from_projects.keys():
         codes_weighted_by_project_count[k1][k2] = len(codes_from_projects[k1][k2])
 
 
-print("Saving votes".format(thresh))
+print("Saving votes")
 
 with open("./postcodes-coocuring-by-votes.pkl","w") as fp:
     pickle.dump(codes_from_votes, fp)
@@ -97,7 +97,7 @@ with open("./postcodes-coocuring-by-votes.pkl","w") as fp:
 with open("./postcodes-coocuring-by-project.pkl","w") as fp:
     pickle.dump(codes_from_projects, fp)
 
-print("Saving weights".format(thresh))
+print("Saving weights")
 
 weights = {
     'codes_weighted_by_vote_count' : codes_weighted_by_vote_count,
