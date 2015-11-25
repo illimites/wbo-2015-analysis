@@ -4,6 +4,9 @@ import pickle
 import pandas as pd
 import math
 
+dane = pd.read_csv("../data/processed/votes_with_city_wojewodztwo.csv", sep=';', encoding = "utf8")
+
+
 wroclaw_votes = dane[(dane['Miasto']==u'Wrocław') & ((dane['Prog_1'] > 0)|(dane['Prog_2'] > 0)|(dane['Prog_3'] > 0))]
 wroclaw_records = wroclaw_votes.to_records()
 
