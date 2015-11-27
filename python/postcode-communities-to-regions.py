@@ -13,7 +13,7 @@ kody2 = { unicode(k.replace('-','')) :  kody[k] for k in kody }
 with open("./postcodes-communities-by-project-count.pkl","r") as fp:
     communities = pickle.load(fp)
 
-clusters = { v : kody2[k] for k, v in communities.iteritems() }
+clusters = { v : kody2[k] if k in kody2[k] for k, v in communities.iteritems() }
 
 i = 0
 for cl in clusters.values():
