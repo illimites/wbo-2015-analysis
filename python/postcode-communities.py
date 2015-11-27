@@ -2,12 +2,6 @@ from graph_tool.all import *
 import pickle
 import pandas as pd
 
-
-from shapely.geometry import mapping, shape
-from shapely.geometry.collection import GeometryCollection
-from shapely.geometry import MultiPoint, MultiPolygon
-
-
 with open("./postcodes-coocuring-weights.pkl","r") as fp:
     dane = pickle.load(fp)
 
