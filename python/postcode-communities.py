@@ -15,13 +15,11 @@ with open("./postcodes-coocuring-weights.pkl","r") as fp:
 graf = dane['codes_weighted_by_project_count']
 
 ug = Graph(directed=False)
-edge_weights = g.new_edge_property('int64_t')
-vertex_code  = g.new_edge_property('string')
+edge_weights = ug.new_edge_property('int64_t')
 
 vertex_dict = {}
 for c in graf.keys():
 	vertex_dict[c] = ug.add_vertex()
-	vertex_code[vertex_dict[c]] = c
 
 edges = []
 for k1 in graf.keys():
@@ -35,7 +33,7 @@ for vec in edges:
     e = ug.add_edge(v1, v2)
     edge_weights[e] = vec[2]
 
-state = minimize_blockmodel_dl(g, eweight = edge_weights)
+state = minimize_blockmodel_dl(ug, eweight = edge_weights)
 blocks = state.get_blocks()
 
 communities = {}
