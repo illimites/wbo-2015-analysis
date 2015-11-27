@@ -8,7 +8,7 @@ import pickle
 with open('../data/processed/postcodes-gis.pkl','r') as fp:
     kody = pickle.load(fp)
 
-kody2 = { k.replace('-','') :  kody[k] for k in kody }
+kody2 = { unicode(k.replace('-','')) :  kody[k] for k in kody }
 
 with open("./postcodes-communities-by-project-count.pkl","r") as fp:
     communities = pickle.load(fp)
