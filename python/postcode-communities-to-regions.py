@@ -1,6 +1,6 @@
 from shapely.geometry import mapping, shape
 from shapely.geometry.collection import GeometryCollection
-from shapely.geometry import MultiPoint, MultiPolygon
+from shapely.geometry import Point, MultiPoint, MultiPolygon
 import geojson
 import pickle
 
@@ -13,11 +13,11 @@ kody2 = { unicode(k.replace('-','')) :  kody[k] for k in kody }
 with open("./postcodes-communities-by-project-count.pkl","r") as fp:
     communities = pickle.load(fp)
 
-clusters = { v : kody2[k] for k, v in communities.iteritems() if k in kody2 }
+clusters = { v : Point(kody2[k][0], kody2[k][1]) for k, v in communities.iteritems() if k in kody2 }
 
 i = 0
 for cl in clusters.values():
-    poly = MultiPoint([stops[stops_array[x]] for x in cl]).convex_hull
+    poly = MultiPoint(cl).convex_hull
     cluster_polygons.append(geojson.Feature(geometry=poly, id = i))
     i=i+1
  
